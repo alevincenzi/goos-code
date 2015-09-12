@@ -12,6 +12,9 @@ import auctionsniper.SniperPortfolio.PortfolioListener;
 import auctionsniper.util.Defect;
 
 public class SnipersTableModel extends AbstractTableModel implements SniperListener, PortfolioListener {
+
+  private static final long serialVersionUID = 4454231962691297526L;
+
   private final static String[] STATUS_TEXT = { 
     "Joining", "Bidding", "Winning", "Losing", "Lost", "Won", "Failed" 
   };

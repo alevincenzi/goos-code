@@ -85,6 +85,9 @@ public class AuctionMessageTranslator implements MessageListener {
     }
   }
   private static class MissingValueException extends Exception {
+
+	private static final long serialVersionUID = -5825178760744007574L;
+
     public MissingValueException(String fieldName) {
       super("Missing value for " + fieldName);
     }
