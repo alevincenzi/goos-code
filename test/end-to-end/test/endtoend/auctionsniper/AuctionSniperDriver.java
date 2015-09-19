@@ -21,7 +21,12 @@ import com.objogate.wl.swing.driver.JTextFieldDriver;
 import com.objogate.wl.swing.gesture.GesturePerformer;
 
 @SuppressWarnings("unchecked")
-public class AuctionSniperDriver extends JFrameDriver { 
+public class AuctionSniperDriver extends JFrameDriver {
+	
+  static {
+    System.setProperty("com.objogate.wl.keyboard", "US");
+  }
+	
   public AuctionSniperDriver(int timeoutMillis) { 
     super(new GesturePerformer(), 
           JFrameDriver.topLevelFrame( 
